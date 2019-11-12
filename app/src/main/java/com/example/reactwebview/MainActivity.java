@@ -1,19 +1,27 @@
 //package com.example.reactwebview;
 //
-//import androidx.appcompat.app.AppCompatActivity;
-//
 //import android.content.Context;
-////import android.content.Intent;
+//import android.content.Intent;
 //import android.os.AsyncTask;
 //import android.os.Bundle;
 //import android.util.Log;
 //import android.view.View;
 //import android.webkit.JavascriptInterface;
-//import android.webkit.WebView;
 //import android.webkit.WebSettings;
+//import android.webkit.WebView;
+//
+//import androidx.appcompat.app.AppCompatActivity;
 //
 //import com.clover.sdk.util.CloverAccount;
+//import com.clover.sdk.v1.Intents;
+//import com.clover.sdk.v1.tender.Tender;
 //import com.clover.sdk.v1.tender.TenderConnector;
+//import com.clover.sdk.v3.payments.ServiceChargeAmount;
+//
+//import java.util.ArrayList;
+//import java.util.Currency;
+//
+////import android.content.Intent;
 //
 //
 //class WebAppInterface {
@@ -41,18 +49,18 @@
 //
 //    /**
 //     * doSale
-//     *
+//     * <p>
 //     * STUB handling submission to Clover SDK.
 //     * This will pass a value to Clover upon a successful transaction.
-//     * */
-//    @JavascriptInterface
-//    public String doSale(String amount) {
-//        Log.w(TAG, "HIT");
+//     */
+////    @JavascriptInterface
+////    public String doSale(String amount) {
+////        Log.w(TAG, "HIT");
 ////        Intent i = new Intent(Intents.ACTION_SECURE_PAY);
 ////        i.putExtra(Intents.EXTRA_AMOUNT, Long.valueOf(amount));
 ////        startActivityForResult(i, WEB_POS_SALE_REQUEST_CODE);
-//        return amount;
-//    }
+////        return amount;
+////    }
 //}
 //
 //public class MainActivity extends AppCompatActivity {
@@ -63,7 +71,7 @@
 //        setContentView(R.layout.activity_main);
 //
 //        // Necessary for Customer Facing user experiences
-//        setSystemUiVisibility();
+////        setSystemUiVisibility();
 //
 //        WebView myWebView = findViewById(R.id.webview);
 //        myWebView.loadUrl("https://awesome-stonebraker-38b0e2.netlify.com/");

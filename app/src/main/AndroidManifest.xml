@@ -14,12 +14,9 @@
         android:testOnly="false"
         android:theme="@style/Theme.AppCompat">
 
-        <meta-data
-            android:value="@string/app_name"/>
-
-        <activity android:name=".CreateTenderActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="clover.intent.action.CUSTOMER_TENDER" />
+                <action android:name="clover.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
